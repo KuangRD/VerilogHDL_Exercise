@@ -1,0 +1,17 @@
+module clock_pwm25(clk);
+  output clk;
+  reg clk = 1'b0;
+
+  
+  always
+  begin
+  
+  #10 clk = 1'b0;
+  #30 clk = 1'b1;
+    
+  end 
+  
+  initial
+  #120 $stop;
+  
+endmodule
